@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-15T13:50:26 GMT-05:00" name="Default suite" finished-at="2023-12-15T13:51:03 GMT-05:00" duration-ms="36125">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-15T13:50:26 GMT-05:00" name="Default test" finished-at="2023-12-15T13:51:03 GMT-05:00" duration-ms="36125">
+      <class name="cucumberOptions.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:50:27 GMT-05:00" name="setUpClass" finished-at="2023-12-15T13:50:29 GMT-05:00" duration-ms="2269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@63998bf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:50:29 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-15T13:51:01 GMT-05:00" duration-ms="32477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for product search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place the order for Products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:50:29 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-15T13:51:02 GMT-05:00" duration-ms="33409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for offers page and validation of Product Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and validate Product Name in Offers page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:50:29 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-15T13:51:02 GMT-05:00" duration-ms="33529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for product search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Place the order for Products"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:50:29 GMT-05:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-15T13:51:02 GMT-05:00" duration-ms="32820" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for offers page and validation of Product Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search and validate Product Name in Offers page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.apache.poi.openxml4j.exceptions.OpenXML4JRuntimeException">
+            <message>
+              <![CDATA[Fail to save: an error occurs while saving the package : The part /xl/theme/theme1.xml failed to be saved in the stream with marshaller org.apache.poi.openxml4j.opc.internal.marshallers.DefaultMarshaller@5cc583ef. Enable logging via Log4j 2 for more details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.OpenXML4JRuntimeException: Fail to save: an error occurs while saving the package : The part /xl/theme/theme1.xml failed to be saved in the stream with marshaller org.apache.poi.openxml4j.opc.internal.marshallers.DefaultMarshaller@5cc583ef. Enable logging via Log4j 2 for more details.
+at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:598)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1496)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1483)
+at org.apache.poi.openxml4j.opc.ZipPackage.closeImpl(ZipPackage.java:472)
+at org.apache.poi.openxml4j.opc.OPCPackage.close(OPCPackage.java:470)
+at org.apache.poi.ooxml.POIXMLDocument.close(POIXMLDocument.java:189)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.close(XSSFWorkbook.java:610)
+at utils.ExcelReader.getData(ExcelReader.java:26)
+at utils.GenericUtils.ReadDatafromInputExcel(GenericUtils.java:38)
+at stepDefinitions.LandingPageStepDefinition.user_searched_from_sheet_with_rowNumber_and_extracted_actual_name_of_product(LandingPageStepDefinition.java:44)
+at ✽.user searched from sheet Sheet1 with rowNumber 0 and extracted actual name of product(file:///C:/Users/USER/eclipse-workspace/CucumberFramework/CucumberFramework/src/test/java/features/searchProduct.feature:6)
+Caused by: org.apache.poi.openxml4j.exceptions.OpenXML4JException: The part /xl/theme/theme1.xml failed to be saved in the stream with marshaller org.apache.poi.openxml4j.opc.internal.marshallers.DefaultMarshaller@5cc583ef. Enable logging via Log4j 2 for more details.
+at org.apache.poi.openxml4j.opc.ZipPackage.saveImpl(ZipPackage.java:587)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1496)
+at org.apache.poi.openxml4j.opc.OPCPackage.save(OPCPackage.java:1483)
+at org.apache.poi.openxml4j.opc.ZipPackage.closeImpl(ZipPackage.java:472)
+at org.apache.poi.openxml4j.opc.OPCPackage.close(OPCPackage.java:470)
+at org.apache.poi.ooxml.POIXMLDocument.close(POIXMLDocument.java:189)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.close(XSSFWorkbook.java:610)
+at utils.ExcelReader.getData(ExcelReader.java:26)
+at utils.GenericUtils.ReadDatafromInputExcel(GenericUtils.java:38)
+at stepDefinitions.LandingPageStepDefinition.user_searched_from_sheet_with_rowNumber_and_extracted_actual_name_of_product(LandingPageStepDefinition.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.OpenXML4JRuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestNGTestRunner@304bb45b]" started-at="2023-12-15T13:51:02 GMT-05:00" name="tearDownClass" finished-at="2023-12-15T13:51:03 GMT-05:00" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
