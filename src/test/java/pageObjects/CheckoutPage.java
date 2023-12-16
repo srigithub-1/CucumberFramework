@@ -27,6 +27,7 @@ public class CheckoutPage {
 	
 	public Boolean VerifyPromoBtn()
 	{
+		System.out.println("The Promo Btn is displayed");
 		return driver.findElement(promoBtn).isDisplayed();
 	}
 	
